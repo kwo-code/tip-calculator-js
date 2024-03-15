@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор чаевых</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="body">
+            
+            <h1 id="heading">Калькулятор <br> чаевых</h2>
+
+            <p class="low">Сумма по счету</p>
+            <input type="number" id="account" class="num-input" min="0" value="1000">
+
+            <p class="low">Качество обслуживания</p>
+            <select id="select-input">
+                <option value="15">Отличное (15%)</option>
+                <option value="10">Хорошее (10%)</option>
+                <option value="5">Нормальное (5%)</option>
+                <option value="0">Плохое (0%)</option>
+            </select>
+
+            <p class="low">Количество человек</p>
+            <input type="number" id="peoples" class="num-input" min="1" value="4">
+
+            <div>
+                <button id="button-accept">ПОСЧИТАТЬ</button>
+                <button id="button-reload">СБРОСИТЬ</button>
+            </div>
+
+            <p id="from-one">Чаевые: 150₽</p>
+            <p id="from-every">Всего: 600₽</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
